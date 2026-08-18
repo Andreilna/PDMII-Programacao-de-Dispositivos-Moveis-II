@@ -11,7 +11,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.teste.exercicios.calcularFatura
 import com.example.teste.exercicios.calcularIrrf
+import com.example.teste.exercicios.validarAcesso
 import com.example.teste.model.AlunoNormal
 import com.example.teste.model.Curso
 import com.example.teste.ui.theme.TesteTheme
@@ -23,17 +25,25 @@ class MainActivity : ComponentActivity() {
         setContent {
             TesteTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    println("ANDREI")
                     var aluno = AlunoNormal("Andrei", 20)
-                    aluno.apresentar()
+                    // Exemplo
+                    //aluno.apresentar()
 
                     val cursoTeste = Curso (1,"PDMII","")
 
                     // Exemplo
-                    exemploLambda()
+                    //exemploLambda()
 
                     // Atividade 01
-                    calcularIrrf()
+                    //calcularIrrf()
+
+                    // Atividade 02
+                    //calcularFatura()
+
+                    // Atividade 03
+                    val resultado = validarAcesso(null)
+                    println(resultado)
+
 
                     Greeting(
                         name = "Android",

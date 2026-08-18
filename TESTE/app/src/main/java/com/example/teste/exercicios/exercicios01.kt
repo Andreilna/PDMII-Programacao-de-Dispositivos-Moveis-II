@@ -1,6 +1,6 @@
 package com.example.teste.exercicios
 fun calcularIrrf() {
-    val salariosBrutos = listOf<Double?>(2000.0, 2500.0, 5000.0, null)
+    val salariosBrutos = listOf(2000.0, 2500.0, 5000.0, null)
 
     for (salarioBruto in salariosBrutos) {
         if (salarioBruto == null) {
