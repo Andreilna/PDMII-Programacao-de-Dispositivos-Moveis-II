@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.teste.exercicios.aplicarDisconto
 import com.example.teste.exercicios.calcularFatura
 import com.example.teste.exercicios.calcularIrrf
 import com.example.teste.exercicios.validarAcesso
@@ -41,8 +42,12 @@ class MainActivity : ComponentActivity() {
                     //calcularFatura()
 
                     // Atividade 03
-                    val resultado = validarAcesso(null)
-                    println(resultado)
+                    //val resultado = validarAcesso(null)
+                    //println(resultado)
+
+                    // Atividade 04
+                    val valorTotal = aplicarDisconto(200.0, "PIX")
+                    println(valorTotal)
 
 
                     Greeting(
