@@ -1,6 +1,6 @@
 package com.example.teste.exercicios
 
-fun aplicarDisconto(valor: Double, formaPagamento: String): String {
+fun aplicarDisconto(valor: Double, formaPagamento: String){
     var valorFinal: Double
 
     if (formaPagamento == "PIX"){
@@ -17,6 +17,4 @@ fun aplicarDisconto(valor: Double, formaPagamento: String): String {
         valorFinal = valor * (1 - 0.00)
         println("$formaPagamento $valorFinal")
     }
-
-    return ""
 }

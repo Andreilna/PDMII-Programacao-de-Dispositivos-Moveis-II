@@ -14,6 +14,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.teste.exercicios.aplicarDisconto
 import com.example.teste.exercicios.calcularFatura
 import com.example.teste.exercicios.calcularIrrf
+import com.example.teste.exercicios.filtroFolha
+import com.example.teste.exercicios.produto
 import com.example.teste.exercicios.validarAcesso
 import com.example.teste.model.AlunoNormal
 import com.example.teste.model.Curso
@@ -46,9 +48,14 @@ class MainActivity : ComponentActivity() {
                     //println(resultado)
 
                     // Atividade 04
-                    val valorTotal = aplicarDisconto(200.0, "PIX")
-                    println(valorTotal)
+                    //val valorTotal = aplicarDisconto(200.0, "PIX")
+                    //println(valorTotal)
 
+                    // Atividade 05
+                    //filtroFolha()
+
+                    // Atividade 06
+                    produto("Notebook", 3000.0, "Eletrónicos")
 
                     Greeting(
                         name = "Android",
