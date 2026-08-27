@@ -14,8 +14,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.teste.exercicios.aplicarDisconto
 import com.example.teste.exercicios.calcularFatura
 import com.example.teste.exercicios.calcularIrrf
-import com.example.teste.exercicios.filtroFolha
-import com.example.teste.exercicios.produto
+import com.example.teste.exercicios.executarEx05
+import com.example.teste.exercicios.executarEx06
+import com.example.teste.exercicios.executarEx08
 import com.example.teste.exercicios.validarAcesso
 import com.example.teste.model.AlunoNormal
 import com.example.teste.model.Curso
@@ -53,9 +54,16 @@ class MainActivity : ComponentActivity() {
 
                     // Atividade 05
                     //filtroFolha()
+                    //executarEx05()
 
                     // Atividade 06
-                    produto("Notebook", 3000.0, "Eletrónicos")
+                    //produto("Notebook", 3000.0, "Eletrónicos")
+                    //executarEx06()
+
+                    // Atividade 07
+
+                    // Atividade 08
+                    executarEx08()
 
                     Greeting(
                         name = "Android",
