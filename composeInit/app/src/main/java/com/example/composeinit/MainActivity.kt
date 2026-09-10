@@ -4,14 +4,12 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.composeinit.ui.components.BoasVindas
+import com.example.composeinit.ui.exercicios.calcularIrrf
+import com.example.composeinit.ui.lessons.L02FirstComposable
 import com.example.composeinit.ui.theme.ComposeInitTheme
 
 class MainActivity : ComponentActivity() {
@@ -20,12 +18,15 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             ComposeInitTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    BoasVindas(
-                        name = "Andrei",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
+//                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+//                    BoasVindas(
+//                        name = "Andrei",
+//                        modifier = Modifier.padding(innerPadding)
+//                    )
+//                }
+//                L01FirstComposable()
+//                L02FirstComposable()
+                calcularIrrf()
             }
         }
     }
