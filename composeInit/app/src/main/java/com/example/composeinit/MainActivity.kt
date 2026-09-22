@@ -10,6 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.composeinit.ui.exercicios.calcularIrrf
 import com.example.composeinit.ui.lessons.L02FirstComposable
+import com.example.composeinit.ui.lessons.L03Parameters
 import com.example.composeinit.ui.theme.ComposeInitTheme
 
 class MainActivity : ComponentActivity() {
@@ -26,7 +27,11 @@ class MainActivity : ComponentActivity() {
 //                }
 //                L01FirstComposable()
 //                L02FirstComposable()
-                calcularIrrf()
+                L03Parameters()
+
+
+
+//                calcularIrrf()
             }
         }
     }
