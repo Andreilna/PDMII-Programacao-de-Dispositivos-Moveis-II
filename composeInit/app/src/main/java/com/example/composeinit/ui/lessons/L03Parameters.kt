@@ -1,5 +1,6 @@
 package com.example.composeinit.ui.lessons
 
+import android.text.style.LineBackgroundSpan
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -14,30 +15,36 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.composeinit.ui.lesson.LessonScaffold
+import com.example.composeinit.ui.lesson.TextControl
+
 
 @Composable
 fun L03Parameters() {
-    var text by remember { mutableStateOf("Tela de Login") }
+    var text by remember { mutableStateOf(value = "Tela de Login") }
     LessonScaffold(
-        title = "Parâmetros",
-        notice = "Troque o estilo e veja o texto mudar de tamanho e peso junto — " +
-                "é o tema decidindo, não você. Ligue 'limitar a 1 linha' para ver as " +
-                "reticências do overflow.",
-    ){
-        ParametersDemo(text)
+        title = "Parametros",
+        notice = "O primeiro titulo ignora oque voce digita- o texto esta escrito por dentro da função",
+        controls = {
+            TextControl(
+                value = text,
+                onValueChange = {text = it},
+                label = "texto a ser alterado"
+            )
+        }
+    ) {
+        ParamtersDemo(text)
     }
+
 }
 
 @Composable
-fun StatelessTitle() {
+fun StatelessTitle(modifier: Modifier = Modifier){
     Text(
-        text = "Tela de Login",
-        fontSize = 28.sp
-    )
+        text = "Tela de login",
+        fontSize = 28.sp)
 }
-
 @Composable
-fun StatefullTitle(text: String) {
+fun StatefullTitle(text:String){
     Text(
         text = text,
         fontSize = 28.sp
@@ -45,27 +52,22 @@ fun StatefullTitle(text: String) {
 }
 
 @Composable
-fun ParametersDemo(text: String) {
+fun ParamtersDemo(text:String) {
     Column(
         modifier = Modifier.fillMaxWidth(),
-        verticalArrangement = Arrangement.spacedBy(8.dp)
+        verticalArrangement = Arrangement.spacedBy(space = 8.dp)
     ) {
-        Text(
-            text = "Componente Stateless"
-        )
+        Text(text="Componente Stateless")
         StatelessTitle()
-
-        Text(
-            text = "Componente Statefull"
-        )
+        Text(text="Componente Statefull")
         StatefullTitle(text)
-        StatefullTitle("$text (de novo)")
+        StatefullTitle(text="$text(sendo usado novamente)")
         StatefullTitle(text.uppercase())
     }
 }
 
 @Preview(showBackground = true)
 @Composable
-private fun ParametersDemoPreview() {
-    ParametersDemo("TESTE DSM5")
+fun ParametersDemoPreview() {
+    ParamtersDemo(text = "TESTE DSM5")
 }

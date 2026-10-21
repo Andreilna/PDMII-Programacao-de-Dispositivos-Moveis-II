@@ -8,9 +8,14 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.composeinit.ui.exercicios.calcularIrrf
-import com.example.composeinit.ui.lessons.L02FirstComposable
 import com.example.composeinit.ui.lessons.L03Parameters
+import com.example.composeinit.ui.lessons.L04Input
+import com.example.composeinit.ui.lessons.L05ColumnRow
+import com.example.composeinit.ui.lessons.L06Box
+import com.example.composeinit.ui.lessons.L07WeightSpace
+import com.example.composeinit.ui.lessons.L08LazyColumn
+import com.example.composeinit.ui.lessons.L09Button
+import com.example.composeinit.ui.lessons.L10TextField
 import com.example.composeinit.ui.theme.ComposeInitTheme
 
 class MainActivity : ComponentActivity() {
@@ -27,9 +32,14 @@ class MainActivity : ComponentActivity() {
 //                }
 //                L01FirstComposable()
 //                L02FirstComposable()
-                L03Parameters()
-
-
+//                L03Parameters()
+//                L04Input()
+//                L05ColumnRow()
+//                L06Box()
+//                L07WeightSpace()
+//                L08LazyColumn()
+//                L09Button()
+                L10TextField()
 
 //                calcularIrrf()
             }

@@ -47,7 +47,8 @@ fun LessonScaffold(
             TopAppBar(
                 title = { Text(title) },
                 navigationIcon = {
-                    IconButton(onClick = {/*OUTRA HORA*/ }) {
+                    IconButton(onClick = {/*OUTRA HORA*/
+                    }) {
                         Icon(
                             imageVector = Icons.AutoMirrored.Filled.ArrowBack,
                             contentDescription = "Voltar"
